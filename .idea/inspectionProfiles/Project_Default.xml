@@ -1,0 +1,25 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="11">
+            <item index="0" class="java.lang.String" itemvalue="flask-settings" />
+            <item index="1" class="java.lang.String" itemvalue="typing_extensions" />
+            <item index="2" class="java.lang.String" itemvalue="flask-cors" />
+            <item index="3" class="java.lang.String" itemvalue="flask-sqlalchemy" />
+            <item index="4" class="java.lang.String" itemvalue="Flask-JWT-Extended" />
+            <item index="5" class="java.lang.String" itemvalue="uwsgi" />
+            <item index="6" class="java.lang.String" itemvalue="flask" />
+            <item index="7" class="java.lang.String" itemvalue="cx_Oracle" />
+            <item index="8" class="java.lang.String" itemvalue="jsonschema" />
+            <item index="9" class="java.lang.String" itemvalue="sqlalchemy" />
+            <item index="10" class="java.lang.String" itemvalue="simplejson" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

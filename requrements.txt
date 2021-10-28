@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+sqlalchemy
+pyJWT
+python-multipart
+pydantic
+Jinja2
+alembic
+tenacity
+httpx
+passlib
+python-jose
+email_validator
+bcrypt
+python-oauth2
