@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, List
 
 from pydantic import BaseModel, EmailStr
 
@@ -36,3 +36,7 @@ class UserInDB(UserInDBBase):
 # Additional properties to return via API
 class User(UserInDBBase):
     pass
+
+
+class UserList(BaseModel):
+    users: List[UserInDBBase]
