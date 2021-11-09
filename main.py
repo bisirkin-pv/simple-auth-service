@@ -4,6 +4,7 @@ from pathlib import Path
 from fastapi import FastAPI, APIRouter, Request, Depends
 from fastapi.templating import Jinja2Templates
 from sqlalchemy.orm import Session
+from starlette.middleware.cors import CORSMiddleware
 
 from app import crud
 from app.api import deps
@@ -16,6 +17,19 @@ TEMPLATES = Jinja2Templates(directory=str(BASE_PATH / "templates"))
 root_router = APIRouter()
 app = FastAPI(title="Auth Service API", openapi_url=f"{settings.API_V1_STR}/openapi.json")
 
+
+origins = [
+    "http://localhost",
+    "http://localhost:8080",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @root_router.get("/", status_code=200)
 def root(
